@@ -18,7 +18,7 @@ factor,result = Normalize(factor,result)
 
 labels = ['CRIM','ZN','INDUS','CHAS','NOX','RM','AGE','DIS','RAD','TAX','PTRATIO','B','LSTAT']
 plt.rcParams['font.sans-serif'] = ['SimHei']
-plt.ylabel('房价',fontsize=10)
+plt.ylabel('房价',fontsize=15)
 for i in range(1,14):
     plt.xlabel(labels[i-1], fontsize=10)
     plt.scatter(factor[:,i],result,s=1)
